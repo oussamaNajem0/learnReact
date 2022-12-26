@@ -1,16 +1,16 @@
-import React from "react";
+import { Link} from "react-router-dom";
 
 const Headder = () => {
   return (
     <div>
       <header className="hide-when-mobile">
-        <h1>Courses</h1>
+        <h1> <Link to="/">Courses</Link></h1>
         <ul className="flex">
           <li className="main-list">
-            <a className="main-link" href="#">
+            <Link className="main-link" to="/html">
               HTML
-            </a>
-            <ul className="sub-ul">
+            </Link>
+            {/* <ul className="sub-ul">
               <li>
                 <a href>Full Course</a>
               </li>
@@ -20,13 +20,13 @@ const Headder = () => {
               <li>
                 <a href>learn in 1h</a>
               </li>
-            </ul>
+            </ul> */}
           </li>
           <li className="main-list">
-            <a className="main-link" href="#">
+            <Link className="main-link" to="/css">
               CSS
-            </a>
-            <ul className="sub-ul">
+            </Link>
+            {/* <ul className="sub-ul">
               <li>
                 <a href>Full Course</a>
               </li>
@@ -47,17 +47,17 @@ const Headder = () => {
                   </li>
                 </ul>
               </li>
-            </ul>
+            </ul> */}
           </li>
           <li className="main-list">
-            <a className="main-link" href="#">
+            <Link className="main-link" to="/javascript">
               JavaScript
-            </a>
-            <ul className="sub-ul sub-of-js">
+            </Link>
+            {/* <ul className="sub-ul sub-of-js">
               <li>
                 <a href>coming soon🔥</a>
               </li>
-            </ul>
+            </ul> */}
           </li>
         </ul>
       </header>
@@ -73,7 +73,7 @@ const Headder = () => {
               HTML <i className="fas fa-plus" />
             </label>
             <input id="html" type="checkbox" />
-            <ul className="sub-div">
+            {/* <ul className="sub-div">
               <li>
                 <a href>Full Course</a>
               </li>
@@ -83,14 +83,14 @@ const Headder = () => {
               <li>
                 <a href>learn in 1h</a>
               </li>
-            </ul>
+            </ul> */}
           </div>
           <div className="main-div">
             <label htmlFor="css">
               CSS <i className="fas fa-plus" />
             </label>
             <input id="css" type="checkbox" />
-            <ul className="sub-div">
+            {/* <ul className="sub-div">
               <li>
                 <a href>Full Course</a>
               </li>
@@ -114,18 +114,18 @@ const Headder = () => {
                   </li>
                 </ul>
               </li>
-            </ul>
+            </ul> */}
           </div>
           <div className="main-div">
             <label htmlFor="js">
               JavaScript <i className="fas fa-plus" />
             </label>
             <input id="js" type="checkbox" />
-            <ul className="sub-div">
+            {/* <ul className="sub-div">
               <li>
                 <a href>coming soon🔥</a>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </header>
